@@ -14,7 +14,8 @@ public class Album {
     private LinkedList<Track> tracks;
 
     //constructor
-    public Album(){
+    public Album(String nombre, String cantante, int año){
+        this.tracks = new LinkedList<>();
 
     }
 
@@ -64,5 +65,8 @@ public class Album {
 
     public void setTracks(LinkedList<Track> tracks) {
         this.tracks = tracks;
+    }
+    public void añadirTracks (Track track){
+        this.tracks.add(track);
     }
 }
